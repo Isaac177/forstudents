@@ -1,0 +1,9 @@
+
+#root{
+    width: 100%;
+}
+.appContainer{
+    width: 1080px;
+    background: #7FCDFF;
+    margin: 0 auto;
+}

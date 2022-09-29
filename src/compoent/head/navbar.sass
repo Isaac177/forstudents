@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap")
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: "Poppins", sans-serif
+  color: #7FCDFF
+
+body
+  background: #05182D
+  width: 100%
+
+a
+  text-decoration: none
+
+li
+  list-style-type: none
+
+  &:hover
+    cursor: pointer
+
+.navbar
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 10vh
+  box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px
+  width: 100%
+  margin: 0
+
+.logo
+  font-size: 36px
+  color: #EF3A2E
+
+.nav-links
+  display: flex
+  justify-content: flex-end
+  width: 75%
+  color: #7FCDFF
+
+.nav-links li
+  font-size: 20px
+  padding: 10px 20px
+  margin: 0 10px
+  cursor: pointer
+  text-transform: capitalize
+  color: #7FCDFF
+
+  &:hover
+    color: #EF3A2E
+    border-bottom: 2px solid #EF3A2E
+    animation: slide 0.5s ease-in-out
+
+    @keyframes slide
+      0%
+        transform: translateX(0)
+      100%
+        transform: translateX(10px)
+
+.hero
+  width: 1080px
+  margin: 0 auto
+  height: 600px
+
+.hero__container
+  margin-top: 10rem
+
+.mobile-menu-icon
+  display: none
+
+button
+  border: none
+  text-decoration: none
+  font-size: 20px
+  background: none
+
+@media (max-width: 768px)
+  .logo
+    display: flex
+    position: absolute
+    top: 15px
+    left: 35px
+
+  .nav-links
+    display: none
+
+  .nav-links-mobile
+    position: absolute
+    display: block
+    list-style: none
+    box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
+    left: 0
+    top: 10%
+    transition: all 0.5s ease-in-out
+    width: 100%
+    background-color: white
+    color: #7FCDFF
+
+  ul li
+    padding: 32px
+    width: 100%
+    transition: all 0.5s ease-in-out
+    text-align: center
+
+  .mobile-menu-icon
+    position: absolute
+    display: block
+    right: 20px
+
+  .hero h1
+    font-size: 50px
+
+.hero__container
+  display: flex
+  flex-direction: row
+  padding: 10px
+  width: 100%
+
+
+.hero__text
+  text-align: start
+
+.hero__title
+  font-size: 50px
+  color: #7FCDFF
+  margin: 0 20px
+  letter-spacing: 5px
+
+.hero__text > h1
+  font-size: 60px
+  color: #7FCDFF
+  margin: 0 20px
+
+.hero__title > span
+  font-size: 60px
+  color: #EF3A2E
+  margin-left: 10px
+
+
+
+.hero__text > p
+  color: #7FCDFF
+  margin-left: 25px
+
+.hero__img
+  border: 5px solid
+  border-image: linear-gradient(to right, #ff3cac, #562b7c, #2b86c5) 1 100%
+  background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5)
+  animation: rotate 2s linear infinite
+
+  @keyframes rotate
+    50%
+      border-image: linear-gradient(360deg, #ff3cac, #562b7c, #2b86c5) 1 100%
+
+.hexagon
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%)
+  height: 485px
+  width: 785px
+  bottom: 112px
+  position: relative
+
+
+.hero__img > img
+  position: relative
+  width: 738px
+  height: 506px
+  bottom: 23px
+  left: -33px
+  object-fit: cover
+  transform: scaleX(-1)
+
+.hero__btn
+  border: 1px solid #7FCDFF
+  padding: 10px 20px
+  border-radius: 10px
+  cursor: pointer
+  width: fit-content
+
+  &:hover
+    background: #EF3A2E
+    color: white
+
+.hero__buttons
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  margin: 20px 20px
+  gap: 20px
